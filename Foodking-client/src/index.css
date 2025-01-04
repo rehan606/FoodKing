@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.headerbg {
+    /* background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/03/53/33/45579720d58a73c.jpg); */
+    background-image: url(https://t3.ftcdn.net/jpg/06/37/79/62/360_F_637796226_liOHveRjDicrSL7U5Z4ErzMaFf2c1ybe.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.registerbg {
+    background-image: url(https://img.freepik.com/premium-photo/top-view-ingredients-spaghetti-pasta-with-tomato-sauce-copy-space_67155-5969.jpg?semt=ais_hybrid);
+    background-position: center;
+    background-size: cover;
+}
+.loginbg {
+    background-image: url(https://img.pikbest.com/origin/09/35/02/93QpIkbEsTGeA.png!sw800);
+    background-position: center;
+    background-size: cover;
+}
+
+.addfoodbg {
+    background-image: url(https://img.freepik.com/premium-photo/top-view-ingredients-spaghetti-pasta-with-tomato-sauce-copy-space_67155-5969.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.pagination{
+    text-align: center;
+}
+
+.pagination button{
+    margin-right: 10;
+}
