@@ -21,6 +21,7 @@ import FoodGallery from './pages/foodPages/FoodGallery.jsx';
 // TanStack Query 
 import { QueryClient,QueryClientProvider, useQuery, } from '@tanstack/react-query'
 import PrivetRoute from './router/PrivetRoute.jsx';
+import Contact from './pages/common/Contact.jsx';
 const queryClient = new QueryClient()
 
 
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
   {
     path: 'gallery',
     element: <FoodGallery></FoodGallery>
+  },
+  {
+    path: 'contact',
+    element: <Contact></Contact>
   },
   
 ]);

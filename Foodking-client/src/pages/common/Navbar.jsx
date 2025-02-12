@@ -20,9 +20,12 @@ const Navbar = () => {
 
       {user?.email &&
         <li className="font-Oswald uppercase">
-          <NavLink to="/myFoods">My Food</NavLink>
+          <NavLink to="/my-order">My Order</NavLink>
         </li> 
       }
+      <li className="font-Oswald uppercase">
+        <NavLink to="/contact">Contact</NavLink>
+      </li>
       
     </>
   );
