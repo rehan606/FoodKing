@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -84,7 +85,7 @@ const Contact = () => {
             </div>
         </section>
 
-        
+        <Footer></Footer>
     </div>
   );
 };
