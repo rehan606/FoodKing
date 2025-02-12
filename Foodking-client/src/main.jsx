@@ -73,6 +73,7 @@ const router = createBrowserRouter([
     path: 'gallery',
     element: <FoodGallery></FoodGallery>
   },
+  
 ]);
 
 createRoot(document.getElementById('root')).render(

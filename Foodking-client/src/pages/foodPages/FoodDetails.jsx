@@ -181,7 +181,7 @@ const FoodDetails = () => {
                         <span className="text-green-600">{food.quantity}</span>
                         </p>
                         <p>
-                        Category: <span className="font-medium text-green-600">{food.category}</span>
+                        Category: <span className="font-medium text-green-600">{ food.category }</span>
                         </p>
                         <p>
                         Total Purchase Count:{" "}

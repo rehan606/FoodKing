@@ -17,6 +17,13 @@ const Navbar = () => {
       <li className="font-Oswald uppercase">
         <NavLink to="/gallery">Gallery</NavLink>
       </li>
+
+      {user?.email &&
+        <li className="font-Oswald uppercase">
+          <NavLink to="/myFoods">My Food</NavLink>
+        </li> 
+      }
+      
     </>
   );
 
