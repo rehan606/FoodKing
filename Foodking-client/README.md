@@ -25,9 +25,7 @@ FoodKing is a dynamic food ordering and management web application developed usi
 - **Data Management**: Efficient handling and display of data from the database.
 
 
-## Home Page
 
-<p><img src="https://i.ibb.co.com/Dfg6wjkK/Food-King-4.png" alt="Food-King-4" border="0" width="800"></p>
 
 ## Getting Started
 
