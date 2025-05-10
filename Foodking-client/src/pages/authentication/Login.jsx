@@ -108,12 +108,12 @@ const Login = () => {
             
 
             <div className="container mx-auto flex items-center justify-center min-h-screen pt-5 lg:pt-0">
-                <div className="w-full md:w-4/12 bg-white p-8 rounded-md shadow-md   border">
-                    <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
+                <div className="w-full md:w-4/12 bg-white dark:bg-gray-900 p-8 rounded-md shadow-md   border">
+                    <h2 className="text-2xl font-bold text-center mb-6 dark:text-white">Login</h2>
 
                     <form onSubmit={handleLogin}>
                         <div className="mb-4">
-                            <label className="block text-gray-700 mb-2" htmlFor="email">
+                            <label className="block text-gray-700 mb-2 dark:text-white" htmlFor="email">
                                 Username or Email
                             </label>
                             <input
@@ -122,18 +122,18 @@ const Login = () => {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="Enter your email"
-                                className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                className="w-full px-4 py-2 border text-black bg-gray-200 dark:bg-gray-800 dark:text-white dark:focus:ring-gray-800 border-gray-300 rounded focus:outline-none focus:ring-2  focus:ring-orange-400"
                             />
                         </div>
                         <div className="mb-4 relative">
-                            <label className="block text-gray-700 mb-2" htmlFor="password">
+                            <label className="block text-gray-700 mb-2 dark:text-white" htmlFor="password">
                                 Password
                             </label>
                             <input
                                 type={showPassword ? 'text' : 'password'}
                                 id="password"
                                 placeholder="Enter your password"
-                                className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                className="w-full px-4 py-2 border text-black bg-gray-200 dark:bg-gray-800 dark:text-white dark:focus:ring-gray-800 border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-400"
                             />
                             <button
                                 type="button"
@@ -146,7 +146,7 @@ const Login = () => {
                         <div className="flex items-center justify-between mb-4">
                             <label className="flex items-center">
                                 <input type="checkbox" className="mr-2" />
-                                <span className="text-sm text-gray-700">Remember Me</span>
+                                <span className="text-sm text-gray-700 dark:text-white">Remember Me</span>
                             </label>
                             <Link
                                 to="/auth/forgetPassword"
@@ -164,7 +164,7 @@ const Login = () => {
                         </button>
                     </form>
 
-                    <p className="text-center text-sm text-gray-700 mt-4">
+                    <p className="text-center text-sm text-gray-700 dark:text-white mt-4">
                         Don't have an account?{" "}
                         <Link
                             to="/auth/register"
@@ -176,7 +176,7 @@ const Login = () => {
 
                     <div className="flex items-center my-6">
                         <hr className="flex-grow border-gray-300" />
-                        <span className="mx-2 text-gray-500">Or</span>
+                        <span className="mx-2 text-gray-500 "> Or </span>
                         <hr className="flex-grow border-gray-300" />
                     </div>
 

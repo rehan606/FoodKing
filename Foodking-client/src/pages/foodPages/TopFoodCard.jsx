@@ -9,7 +9,7 @@ const TopFoodCard = ({food}) => {
 
     return (
         <div>
-            <div className="bg-white dark:bg-gray-900 transition-transform duration-700 ease-out hover:scale-105  border rounded-lg shadow-md p-4 font-Oswald hover:bg-[#FFB936] dark:hover:bg-[#FFB936]  relative group flex flex-col items-center">
+            <div className="bg-white dark:bg-gray-900 dark:border-gray-900 transition-transform duration-700 ease-out hover:scale-105  border rounded-lg shadow-md p-4 font-Oswald hover:bg-[#FFB936] dark:hover:bg-[#FFB936]  relative group flex flex-col items-center">
                 {/* Heart Icon */}
                 <div className="absolute top-4 left-4 bg-gray-100 rounded-full p-2 text-gray-400 hover:text-red-500 hover:bg-red-100 cursor-pointer transition duration-300">
                 <FaHeart />

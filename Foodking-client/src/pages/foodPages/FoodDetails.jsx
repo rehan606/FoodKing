@@ -113,8 +113,8 @@ const FoodDetails = () => {
 
       {/* Food Details Card  */}
 
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-            <div className="max-w-4xl w-full bg-white shadow-md rounded-lg overflow-hidden">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 dark:bg-gray-800">
+            <div className="max-w-4xl w-full bg-white dark:bg-gray-900 shadow-md rounded-lg overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     {/* Food Image Column */}
                     <div className="p-4 flex justify-center">
@@ -131,15 +131,15 @@ const FoodDetails = () => {
                     <div className="mb-4">
                         <div className="flex items-center mb-2">
                         <span className="text-yellow-400 text-lg">★★★★★</span>
-                        <span className="ml-2 text-gray-600">4.8 (250 reviews)</span>
+                        <span className="ml-2 text-gray-600 dark:text-white">4.8 (250 reviews)</span>
                         </div>
-                        <h1 className="text-2xl font-semibold text-gray-800">
+                        <h1 className="text-2xl font-semibold text-gray-800 dark:text-white">
                         {food.title}
                         </h1>
                     </div>
 
                     {/* Description */}
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 mb-4 dark:text-white">
                         {food.description}
                     </p>
 
@@ -150,7 +150,7 @@ const FoodDetails = () => {
                         </p>
 
                         <div className="flex items-center mt-2">
-                          <label htmlFor="quantity" className="mr-2 text-gray-600">
+                          <label htmlFor="quantity" className="mr-2 text-gray-600 dark:text-white">
                               Quantity:
                           </label>
                           <input
@@ -160,7 +160,7 @@ const FoodDetails = () => {
                               name="quantity"
                               defaultValue="1"
                               onChange={handleQuantityChange}
-                              className="w-16 p-2 border border-gray-300 rounded"
+                              className="w-16 p-2 border border-gray-300 rounded "
                           />
                         </div>
                     </div>
@@ -177,14 +177,14 @@ const FoodDetails = () => {
 
                     {/* Availability and Metadata */}
                     <div className="text-sm text-gray-600 space-y-2">
-                        <p>
+                        <p className="dark:text-white">
                         Available in Store:{" "}
-                        <span className="text-green-600">{food.quantity}</span>
+                        <span className="text-green-600 ">{food.quantity}</span>
                         </p>
-                        <p>
+                        <p className="dark:text-white">
                         Category: <span className="font-medium text-green-600">{ food.category }</span>
                         </p>
-                        <p>
+                        <p className="dark:text-white">
                         Total Purchase Count:{" "}
                         <span className="font-medium text-green-600">{food.order}</span>
                         </p>
@@ -194,7 +194,7 @@ const FoodDetails = () => {
             </div>
         </div>
 
-        <div className="border border-t-2">
+        <div className="">
             <Footer></Footer>
         </div>
     </div>

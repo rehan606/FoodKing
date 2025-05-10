@@ -28,7 +28,7 @@ const Pagination = () => {
           <button
             key={pageNumber}
             onClick={() => handlePageChange(pageNumber)}
-            className={`w-10 h-10 flex items-center justify-center bg-gray-200 text-black rounded-md 
+            className={`w-10 h-10 flex items-center justify-center bg-gray-200 dark:bg-gray-800 text-black rounded-md 
               ${currentPage === pageNumber ? 'bg-blue-500 text-white' : 'hover:bg-gray-300'}`}
           >
             {pageNumber}

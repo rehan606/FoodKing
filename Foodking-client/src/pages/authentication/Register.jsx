@@ -112,9 +112,9 @@ const Register = () => {
                 <div className="w-full md:w-8/12 lg:w-4/12">
                     <form
                         onSubmit={handleRegister}
-                        className="w-full max-w-md bg-white p-6 rounded-lg shadow-md"
+                        className="w-full max-w-md bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md"
                     >
-                        <h2 className="text-2xl font-semibold text-center mb-6">
+                        <h2 className="text-2xl font-semibold text-center mb-6 dark:text-white">
                         Create an account
                         </h2>
 
@@ -122,7 +122,7 @@ const Register = () => {
                         <div className="mb-4">
                         <label
                             htmlFor="name"
-                            className="block text-sm font-medium text-gray-700"
+                            className="block text-sm font-medium text-gray-700 dark:text-white"
                         >
                             Name
                         </label>
@@ -131,7 +131,7 @@ const Register = () => {
                             name="name"
                             id="name"
                             placeholder="Enter your name"
-                            className="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                            className="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm text-black bg-gray-200 dark:bg-gray-800 dark:text-white dark:focus:ring-gray-800"
                             required
                         />
                         </div>
@@ -140,7 +140,7 @@ const Register = () => {
                         <div className="mb-4">
                         <label
                             htmlFor="photo"
-                            className="block text-sm font-medium text-gray-700"
+                            className="block text-sm font-medium text-gray-700 dark:text-white"
                         >
                             Photo URL
                         </label>
@@ -149,7 +149,7 @@ const Register = () => {
                             name="photo"
                             id="photo"
                             placeholder="Enter your photo URL"
-                            className="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                            className="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm text-black bg-gray-200 dark:bg-gray-800 dark:text-white dark:focus:ring-gray-800"
                             required
                         />
                         </div>
@@ -158,7 +158,7 @@ const Register = () => {
                         <div className="mb-4">
                         <label
                             htmlFor="email"
-                            className="block text-sm font-medium text-gray-700"
+                            className="block text-sm font-medium text-gray-700 dark:text-white"
                         >
                             Username or Email
                         </label>
@@ -167,7 +167,7 @@ const Register = () => {
                             name="email"
                             id="email"
                             placeholder="Enter your email"
-                            className="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                            className="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm text-black bg-gray-200 dark:bg-gray-800 dark:text-white dark:focus:ring-gray-800"
                             required
                         />
                         </div>
@@ -176,7 +176,7 @@ const Register = () => {
                         <div className="mb-4">
                         <label
                             htmlFor="password"
-                            className="block text-sm font-medium text-gray-700"
+                            className="block text-sm font-medium text-gray-700 dark:text-white"
                         >
                             Password
                         </label>
@@ -186,7 +186,7 @@ const Register = () => {
                             name="password"
                             id="password"
                             placeholder="Enter your password"
-                            className="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                            className="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm text-black bg-gray-200 dark:bg-gray-800 dark:text-white dark:focus:ring-gray-800"
                             required
                             />
                             <button
@@ -212,10 +212,10 @@ const Register = () => {
                         />
                         <label
                             htmlFor="terms"
-                            className="ml-2 block text-sm text-gray-700"
+                            className="ml-2 block text-sm text-gray-700 dark:text-white"
                         >
                             I agree to the{" "}
-                            <a href="#" className="text-orange-500 hover:underline">
+                            <a href="#" className="text-orange-500 hover:underline ">
                             Terms and Conditions
                             </a>
                         </label>
@@ -230,7 +230,7 @@ const Register = () => {
                         </button>
 
                         {/* Already have an account */}
-                        <p className="text-center text-sm text-gray-600 mt-4">
+                        <p className="text-center text-sm text-gray-600 mt-4 dark:text-white">
                         Already have an account?{" "}
                         <Link
                             to="/auth/login"
@@ -246,7 +246,7 @@ const Register = () => {
                             <div className="w-full border-t border-gray-300"></div>
                         </div>
                         <div className="relative flex justify-center text-sm">
-                            <span className="bg-white px-2 text-gray-500">Or</span>
+                            <span className="bg-white dark:bg-gray-900 px-2 text-gray-500"> Or </span>
                         </div>
                         </div>
 

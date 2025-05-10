@@ -80,8 +80,8 @@ const AllFoods = () => {
       </div>
 
       {/* Search and Filter  */}
-      <div className="py-10">
-        <div className="w-11/12 mx-auto shadow-md p-4 border rounded-lg flex flex-wrap items-center justify-between gap-4">
+      <div className="py-10 bg-white dark:bg-gray-800">
+        <div className="w-11/12 mx-auto shadow-md p-4 border dark:border-gray-900 dark:bg-gray-900 rounded-lg flex flex-wrap items-center justify-between gap-4">
           {/* Search Bar */}
           <div className="flex-1 relative">
             <input
@@ -89,22 +89,22 @@ const AllFoods = () => {
               value={search}
               placeholder="Search..."
               onChange={(e)=> setSearch(e.target.value)}
-              className="w-full border  border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full border bg-white dark:bg-gray-800 text-gray-900 dark:text-white dark:border-gray-800 border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
             />
-            <button className="px-4 py-2 text-white border rounded-tr-md rounded-br-btn bg-gray-700 absolute top-0 right-0">Search</button>
+            <button className="px-4 py-2 text-white dark:border-gray-800 border rounded-tr-md rounded-br-btn bg-gray-700 absolute top-0 right-0">Search</button>
            
           </div>
 
           {/* Filter Dropdown */}
           <div className="flex items-center gap-2">
-            <label htmlFor="filter" className="text-gray-600 font-medium">
+            <label htmlFor="filter" className="text-gray-600 font-medium dark:text-white">
               Filter By:
             </label>
             <select
               id="filter"
               value={filter}
               onChange={(e)=> setFilter(e.target.value)}
-              className="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="border bg-white text-gray-900 dark:text-white dark:bg-gray-800  dark:border-gray-800 border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
             >
                 <option value="">All</option>
                 <option value="burger">Burger</option>
@@ -120,14 +120,14 @@ const AllFoods = () => {
 
           {/* Sort Dropdown */}
           <div className="flex items-center gap-2">
-            <label htmlFor="sort" className="text-gray-600 font-medium">
+            <label htmlFor="sort" className="text-gray-600 font-medium dark:text-white">
               Sort By:
             </label>
             <select
               id="sort"
               value={sort}
               onChange={(e)=> setSort(e.target.value)}
-              className="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="border dark:bg-gray-800 dark:border-gray-800 bg-white text-gray-900 dark:text-white border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
             >
               <option value="">Sort</option>
               <option value="asc">Ascending Order</option>
@@ -163,8 +163,8 @@ const AllFoods = () => {
 
       {/* Cards  */}
 
-      <div>
-        <div className=" w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-20">
+      <div className="bg-white dark:bg-gray-800">
+        <div className=" w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-20 ">
           {foods.map((food) => (
             <FoodCard key={food._id} food={food}></FoodCard>
           ))}
