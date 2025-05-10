@@ -39,7 +39,7 @@ const MyPostedFood = () => {
         </div>
       </div>
 
-      <div className="bg-gray-100 py-20">
+      <div className="bg-gray-100 py-20 dark:bg-gray-800">
         <div className="w-full lg:w-6/12 mx-auto mb-4 ">
           <h2 className="text-2xl font-bold ml-7 text-red-500">
             My Foods: ({foods.length}){" "}

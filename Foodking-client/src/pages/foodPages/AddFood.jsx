@@ -74,34 +74,34 @@ const AddFood = () => {
             </section>
 
             <div className="addfoodbg min-h-screen py-10 font-Roboto">
-            <div className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-8">
-                <h2 className="text-4xl font-Oswald uppercase border-b pb-6 font-bold text-center text-red-600 mb-6">Add New Food Item</h2>
+            <div className="max-w-2xl mx-auto bg-white dark:bg-gray-900 shadow-lg rounded-lg p-8">
+                <h2 className="text-4xl font-Oswald uppercase border-b pb-6 font-bold text-center text-red-600 mb-6 dark:text-white">Add New Food Item</h2>
                 <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Food Name */}
                 <div>
-                    <label className="block text-gray-700 font-semibold mb-2">Food Name</label>
+                    <label className="block text-gray-700 font-semibold mb-2 dark:text-white">Food Name</label>
                     <input
                     type="text"
                     name='food_title'
                     placeholder="Enter food name"
-                    className="w-full py-2 px-3 outline-none border rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                    className="w-full py-2 px-3 outline-none border rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                     />
                 </div>
         
                 {/* Food Image */}
                 <div>
-                    <label className="block text-gray-700 font-semibold mb-2">Food Image</label>
+                    <label className="block text-gray-700 font-semibold mb-2 dark:text-white">Food Image</label>
                     <input
                     type="url"
                     name="image"
-                    className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                    className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                     />
                 </div>
         
                 {/* Food Category */}
                 <div>
-                    <label className="block text-gray-700 font-semibold mb-2">Food Category</label>
-                    <select name="category" className="w-full py-2 px-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500">
+                    <label className="block text-gray-700 font-semibold mb-2 dark:text-white">Food Category</label>
+                    <select name="category" className="w-full py-2 px-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white">
                         <option value="">Select category</option>
                         <option value="burger">Burger</option>
                         <option value="fried-chiken">Fried Chiken</option>
@@ -117,29 +117,29 @@ const AddFood = () => {
         
                 {/* Quantity */}
                 <div>
-                    <label className="block text-gray-700 font-semibold mb-2">Quantity</label>
+                    <label className="block text-gray-700 font-semibold mb-2 dark:text-white">Quantity</label>
                     <input
                     type="number"
                     name="quantity"
                     placeholder="Enter quantity"
-                    className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                    className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                     />
                 </div>
         
                 {/* Price */}
                 <div>
-                    <label className="block text-gray-700 font-semibold mb-2">Price</label>
+                    <label className="block text-gray-700 font-semibold mb-2 dark:text-white">Price</label>
                     <input
                     type="number"
                     name="price"
                     placeholder="Enter price"
-                    className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                    className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                     />
                 </div>
         
                 {/* Add By */}
                 <div>
-                    <label className="block text-gray-700 font-semibold mb-2">Add By</label>
+                    <label className="block text-gray-700 font-semibold mb-2 dark:text-white">Add By</label>
                     <div className="flex space-x-4">
                     <input
                         type="text"
@@ -147,7 +147,7 @@ const AddFood = () => {
                         defaultValue={user?.displayName}
                         disabled='true'
                         placeholder="Your name"
-                        className="w-1/2 py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                        className="w-1/2 py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                     />
                     <input
                         type="email"
@@ -155,30 +155,30 @@ const AddFood = () => {
                         disabled='true'
                         defaultValue={user?.email}
                         placeholder="Your email"
-                        className="w-1/2 py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                        className="w-1/2 py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                     />
                     </div>
                 </div>
         
                 {/* Food Origin */}
                 <div>
-                    <label className="block text-gray-700 font-semibold mb-2">Food Origin</label>
+                    <label className="block text-gray-700 font-semibold mb-2 dark:text-white">Food Origin</label>
                     <input
                     type="text"
                     name="origin"
                     placeholder="Enter country of origin"
-                    className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                    className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                     />
                 </div>
         
                 {/* Short Description */}
                 <div className="md:col-span-2">
-                    <label className="block text-gray-700 font-semibold mb-2">Short Description</label>
+                    <label className="block text-gray-700 font-semibold mb-2 dark:text-white">Short Description</label>
                     <textarea
                     name="description"
                     placeholder="Write ingredients, making procedure, etc."
                     rows="4"
-                    className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                    className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                     ></textarea>
                 </div>
         

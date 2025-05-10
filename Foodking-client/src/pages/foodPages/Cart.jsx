@@ -78,8 +78,8 @@ const Cart = () => {
 
 
             {/* Order Page  */}
-            <div className="min-h-screen bg-gray-100 flex flex-col items-center p-4 pt-20">
-                <div className="w-full max-w-4xl bg-white shadow-md rounded-lg overflow-hidden">
+            <div className="min-h-screen bg-gray-100 dark:bg-gray-800 flex flex-col items-center p-4 pt-20">
+                <div className="w-full max-w-4xl bg-white dark:bg-gray-900 shadow-md rounded-lg overflow-hidden">
                     {/* Cart Table */}
                     <table className="w-full text-left border-collapse">
                         <thead>
@@ -93,34 +93,34 @@ const Cart = () => {
                             <th className="p-4">Remove</th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody className="dark:bg-white/10 dark:border  ">
                             {/* Cart Item 1 */}
 
 
                             {
                                 orders.map(order => (
-                                    <tr key={order._id} className="border-t hover:bg-green-200 ">
+                                    <tr key={order._id} className="border-t hover:bg-green-200 dark:hover:bg-gray-800 ">
                                         <td className="p-4 flex items-center">
                                         <img
                                             src={order.image}
                                             alt="Deluxe Burger"
                                             className="w-12 h-12 rounded-full mr-4"
                                         />
-                                        <span>{order.title}</span>
+                                        <span className="text-black dark:text-white">{order.title}</span>
                                         </td>
-                                        <td className="p-4">${order.price}</td>
+                                        <td className="p-4 text-black dark:text-white">${order.price}</td>
                                         <td className="p-4">
                                         <input
                                             type="number"
                                             min="1"
                                             defaultValue={order.quantity}
                                             disabled={true}
-                                            className="w-16 p-2 border border-gray-300 rounded text-center"
+                                            className="w-16 p-2 border text-black dark:text-white border-gray-300 rounded text-center"
                                         />
                                         </td>
-                                        <td className="p-4"> $ {order.price * order.quantity}</td>
-                                        <td className="p-4"> {user.displayName}</td>
-                                        <td className="p-4">   {moment(order.createdAt).format('lll')}</td>
+                                        <td className="p-4 text-black dark:text-white"> $ {order.price * order.quantity}</td>
+                                        <td className="p-4 text-black dark:text-white"> {user.displayName}</td>
+                                        <td className="p-4 text-black dark:text-white">   {moment(order.createdAt).format('lll')}</td>
                                         <td className="p-4 text-red-500 cursor-pointer">
                                         
                                             <button className="btn bg-red-500 text-white hover:bg-black" onClick={() => handleDelete(order._id)} >X</button>
@@ -140,7 +140,7 @@ const Cart = () => {
                         <input
                             type="text"
                             placeholder="Promo Code"
-                            className="w-full sm:w-64 p-2 border border-gray-300 rounded mr-2"
+                            className="w-full sm:w-64 p-2 border border-gray-300 rounded mr-2 bg-gray-100 dark:bg-gray-800  text-black dark:text-white"
                         />
                         <button className="px-4 py-2 bg-green-500 text-white font-semibold rounded hover:bg-red-600">
                             Apply Code

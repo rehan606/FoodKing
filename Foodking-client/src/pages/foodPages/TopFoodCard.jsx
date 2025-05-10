@@ -27,7 +27,7 @@ const TopFoodCard = ({food}) => {
                 {/* Content */}
                 <div className="mt-4 text-center pb-10">
                 {/* Add to Cart Button */}
-                <Link to={`/foodDetail/${_id}`} className="bg-white border  border-gray-300 text-gray-800 px-10 py-1 rounded-full flex items-center gap-2 mx-auto hover:bg-black hover:text-white group-hover:bg-black group-hover:text-white transition duration-300">
+                <Link to={`/foodDetail/${_id}`} className="bg-white dark:bg-gray-800 dark:border-gray-900 dark:text-white border  border-gray-300 text-gray-800 px-10 py-1 rounded-full flex items-center gap-2 mx-auto hover:bg-black hover:text-white group-hover:bg-black group-hover:text-white transition duration-300">
                     <TbListDetails />
                     View Details
                 </Link>
