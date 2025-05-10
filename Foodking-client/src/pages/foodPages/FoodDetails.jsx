@@ -56,6 +56,7 @@ const FoodDetails = () => {
         email: user?.email,
         name: user?.displayName,
         origin: food.origin,
+        
         category: food.category,
         price: food.price,
         order: food.order ,

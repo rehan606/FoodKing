@@ -7,6 +7,7 @@ import AboutFood from '../pages/homeLayout/AboutFood';
 import Services from '../pages/homeLayout/Services';
 import TopFoods from '../pages/foodPages/TopFoods';
 import Reservation from '../pages/homeLayout/Reservation';
+import RecipeSection from '../pages/homeLayout/Recipes';
 
 const MainLayout = () => {
     return (
@@ -28,6 +29,10 @@ const MainLayout = () => {
             
             <section>
                 <AboutFood></AboutFood>
+            </section>
+
+            <section>
+                <RecipeSection></RecipeSection>
             </section>
 
             <section>

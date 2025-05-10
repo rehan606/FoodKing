@@ -111,7 +111,7 @@ const FoodGallery = () => {
                 <img
                     src={image.src}
                     alt={image.description}
-                    className="w-full h-full object-cover group-hover:opacity-75 transition duration-300"
+                    className="w-full h-full object-cover group-hover:opacity-75 transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-white p-4 transition duration-300">
