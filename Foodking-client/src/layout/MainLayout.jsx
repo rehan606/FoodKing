@@ -31,7 +31,7 @@ const MainLayout = () => {
                 <AboutFood></AboutFood>
             </section>
 
-            <section>
+            <section >
                 <RecipeSection></RecipeSection>
             </section>
 

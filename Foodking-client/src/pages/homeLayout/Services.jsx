@@ -5,16 +5,16 @@ import { SiCodefresh } from "react-icons/si";
 
 const Services = () => {
     return (
-      <section className="bg-gray-100 text-gray-300 py-16">
+      <section className="bg-gray-100 text-gray-300 py-16 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <h2 className="text-3xl font-bold text-center text-red-600 mb-8">Our Services</h2>
+          <h2 className="text-3xl font-bold text-center text-red-600 mb-8 dark:text-white">Our Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  bg-gray-900 p-6 rounded-lg">
             {/* Service 1 */}
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-left">
               <div className="text-green-500 text-4xl mb-4">
               <GiOpenedFoodCan />
               </div>
-              <h3 className="text-xl font-semibold mb-2">super quality food</h3>
+              <h3 className="text-xl font-semibold mb-2">Super quality food</h3>
               <p className="text-gray-400">
                 Tailored solutions to meet your unique business needs with precision and excellence.
               </p>
@@ -26,7 +26,7 @@ const Services = () => {
               <GiForkKnifeSpoon />
                 <i className="fas fa-paint-brush"></i>
               </div>
-              <h3 className="text-xl font-semibold mb-2">original recipes</h3>
+              <h3 className="text-xl font-semibold mb-2">Original recipes</h3>
               <p className="text-gray-400">
                 Creative designs that captivate and elevate your brand identity effortlessly.
               </p>
@@ -38,7 +38,7 @@ const Services = () => {
                 <MdDeliveryDining />
                 <i className="fas fa-chart-line"></i>
               </div>
-              <h3 className="text-xl font-semibold mb-2">quick fast delivery</h3>
+              <h3 className="text-xl font-semibold mb-2">Quick fast delivery</h3>
               <p className="text-gray-400">
                 Boost your online presence with advanced SEO strategies and tools.
               </p>

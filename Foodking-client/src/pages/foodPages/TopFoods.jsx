@@ -38,13 +38,13 @@ const TopFoods = () => {
 
 
     return (
-        <div className="bg-gray-100 ">
+        <div className="bg-gray-100  dark:bg-gray-800 dark:text-white">
         {/* Cards  */}
 
             <div className="py-20  ">
                 <div className="w-11/12 mx-auto mb-10 ">
                     <span className="text-sm md:text-md uppercase text-red-500 font-bold ">crispy, every bite taste</span>
-                    <h2 className="text-3xl md:text-5xl  text-gray-950 uppercase font-bold mt-2 md:mt-4">Popular Food Items </h2>
+                    <h2 className="text-3xl md:text-5xl  text-gray-950 uppercase font-bold mt-2 md:mt-4 dark:text-white">Popular Food Items </h2>
 
                 </div>
                 <div className=" w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-20">

@@ -3,7 +3,7 @@ import React from "react";
 const AboutFood = () => {
   return (
     <div>
-      <section className="flex flex-col md:flex-row items-center justify-between gap-6 bg-gray-50 p-6 md:p-12">
+      <section className="flex flex-col md:flex-row items-center justify-between gap-6 bg-gray-50 p-6 md:p-12 dark:bg-gray-900">
         {/* Left Section: Image */}
         <div className="md:w-1/2 flex justify-center relative">
           <img
@@ -24,11 +24,11 @@ const AboutFood = () => {
           <p className="text-sm text-red-500 font-bold uppercase">
             About Our Food
           </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 mt-2">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 mt-2 dark:text-white">
             Where Quality Meets Excellent{" "}
             <span className="text-red-500">Service</span>.
           </h1>
-          <p className="text-gray-600 mt-4">
+          <p className="text-gray-600 mt-4 dark:text-white">
             It's the perfect dining experience where every dish is crafted with
             fresh, high-quality ingredients. Experience quick and efficient
             service that ensures your food is served fresh.
@@ -38,13 +38,13 @@ const AboutFood = () => {
               <span className="bg-red-500 text-white p-2 rounded-full">
                 <i className="fas fa-utensils"></i>
               </span>
-              <p className="text-gray-800 font-semibold">Super Quality Food</p>
+              <p className="text-gray-800 font-semibold dark:text-white">Super Quality Food</p>
             </div>
             <div className="flex items-center gap-2">
               <span className="bg-green-500 text-white p-2 rounded-full">
                 <i className="fas fa-star"></i>
               </span>
-              <p className="text-gray-800 font-semibold">Well Reputation</p>
+              <p className="text-gray-800 font-semibold dark:text-white">Well Reputation</p>
             </div>
           </div>
           <button className="mt-6 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition">

@@ -2,11 +2,11 @@ import React from 'react';
 
 const Footer = () => {
     return (
-      <footer className="bg-gray-200 ">
+      <footer className="bg-gray-200 dark:bg-gray-900 ">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8  py-20">
           {/* Left Section */}
           <div className="">
-            <h2 className="text-lg font-bold text-gray-800 flex items-center">
+            <h2 className="text-lg font-bold text-gray-800 flex items-center dark:text-white">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/3089/3089716.png"
                 alt="Logo"
@@ -14,10 +14,10 @@ const Footer = () => {
               />
               FOODKING
             </h2>
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-gray-600 dark:text-white">
               We believe it has the power to do amazing things.
             </p>
-            <p className="mt-2 text-gray-600">Interested in working with us?</p>
+            <p className="mt-2 text-gray-600 ">Interested in working with us?</p>
             <a href="mailto:info@example.com" className="text-green-500 font-bold">
               info@example.com
             </a>
@@ -39,19 +39,19 @@ const Footer = () => {
   
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold text-gray-800">Quick Links</h3>
+            <h3 className="text-lg font-bold text-gray-800 dark:text-white">Quick Links</h3>
             <ul className="mt-4 space-y-2 text-gray-600">
-              <li><a href="#" className="hover:text-green-500">Services</a></li>
-              <li><a href="#" className="hover:text-green-500">About Company</a></li>
-              <li><a href="#" className="hover:text-green-500">Latest News</a></li>
-              <li><a href="#" className="hover:text-green-500">Team Member</a></li>
-              <li><a href="#" className="hover:text-green-500">Testimonials</a></li>
+              <li><a href="#" className="hover:text-green-500 ">Services</a></li>
+              <li><a href="#" className="hover:text-green-500 ">About Company</a></li>
+              <li><a href="#" className="hover:text-green-500 ">Latest News</a></li>
+              <li><a href="#" className="hover:text-green-500 ">Team Member</a></li>
+              <li><a href="#" className="hover:text-green-500 ">Testimonials</a></li>
             </ul>
           </div>
   
           {/* My Account */}
           <div>
-            <h3 className="text-lg font-bold text-gray-800">My Account</h3>
+            <h3 className="text-lg font-bold text-gray-800 dark:text-white">My Account</h3>
             <ul className="mt-4 space-y-2 text-gray-600">
               <li><a href="#" className="hover:text-green-500">My Profile</a></li>
               <li><a href="#" className="hover:text-green-500">My Order History</a></li>
@@ -63,7 +63,7 @@ const Footer = () => {
 
           {/* Address & Install App */}
           <div>
-            <h3 className="text-lg font-bold text-gray-800">Address:</h3>
+            <h3 className="text-lg font-bold text-gray-800 dark:text-white">Address:</h3>
             <p className="mt-4 text-gray-600">
               570 8th Ave, New York, NY
               <br />
@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
 
           <div>
-          <h3 className="text-lg font-bold text-gray-800 mt-6">Install App</h3>
+          <h3 className="text-lg font-bold text-gray-800 mt-6 dark:text-white">Install App</h3>
             <div className="flex mt-4 space-x-4">
               <img
                 src="https://foodking-react.vercel.app/assets/img/app-store.png"
@@ -93,7 +93,7 @@ const Footer = () => {
                 className="w-24"
               />
             </div>
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-gray-600 dark:text-white">
               24/7 Support Center:
               <br />
               <span className="text-green-500 font-bold">+880 1822 1822 07</span>
@@ -102,7 +102,7 @@ const Footer = () => {
   
           
         </div>
-        <div className='bg-green-600 mt-6 '>
+        <div className='bg-green-600 mt-6 dark:bg-gray-800'>
             <div className="w-11/12 mx-auto text-center ">
                 <p className='text-white py-6 text-md'>© Copyright <span className='text-yellow-500'>2024</span> Foodking . All Rights Reserved.</p>
             </div>

@@ -20,7 +20,7 @@ const Reservation = () => {
           </div>
   
           {/* Right Column */}
-          <div className="md:w-1/2 bg-green-500 p-6 rounded-lg shadow-lg">
+          <div className="md:w-1/2 bg-green-500 p-6 rounded-lg shadow-lg dark:bg-gray-900">
             <form className="space-y-4">
               <div>
                 <label className="block text-white text-sm font-medium mb-1" htmlFor="people">
@@ -28,7 +28,7 @@ const Reservation = () => {
                 </label>
                 <select
                   id="people"
-                  className="w-full bg-white outline-none text-black rounded-md px-3 py-2 focus:ring focus:ring-green-300"
+                  className="w-full bg-white dark:bg-gray-600 dark:text-white outline-none text-black rounded-md px-3 py-2 focus:ring focus:ring-green-300"
                 >
                   <option value="1">Person 1</option>
                   <option value="2">People 2</option>
@@ -43,7 +43,7 @@ const Reservation = () => {
                 <input
                   type="tel"
                   id="phone"
-                  className="w-full outline-none bg-white text-black rounded-md px-3 py-2 focus:ring focus:ring-green-300"
+                  className="w-full outline-none bg-white dark:bg-gray-600 text-black rounded-md px-3 py-2 focus:ring focus:ring-green-300"
                   placeholder="Enter your phone number"
                 />
               </div>
@@ -54,12 +54,12 @@ const Reservation = () => {
                 <input
                   type="date"
                   id="date"
-                  className="w-full outline-none bg-white text-black rounded-md px-3 py-2 focus:ring focus:ring-green-300"
+                  className="w-full outline-none bg-white dark:bg-gray-600 dark:text-white text-black rounded-md px-3 py-2 focus:ring focus:ring-green-300"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full  bg-yellow-400 text-white font-bold rounded-md py-2 hover:bg-gray-800"
+                className="w-full  bg-yellow-400 dark:text-gray-900 font-bold rounded-md py-2 hover:bg-gray-800 dark:hover:bg-white"
               >
                 Book Now
               </button>
