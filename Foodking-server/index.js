@@ -9,6 +9,10 @@ const port = process.env.PORT || 8000
 // Middle Ware 
 app.use(cors())
 app.use(cors({ origin: 'https://foodking-d2588.web.app' }));
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://foodking-d2588.web.app'],
+  credentials: true
+}));
 app.use(express.json())
 
 

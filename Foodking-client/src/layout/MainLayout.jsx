@@ -11,7 +11,7 @@ import RecipeSection from '../pages/homeLayout/Recipes';
 
 const MainLayout = () => {
     return (
-        <div className="font-Oswald">
+        <div className="font-Oswald ">
             <header className='sticky top-0 z-50'>
                 <Navbar></Navbar>
             </header>
