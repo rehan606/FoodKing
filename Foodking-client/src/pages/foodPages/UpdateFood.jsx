@@ -82,12 +82,12 @@ const UpdateFood = () => {
     return (
         <div>
             <div>
-                <section>
+                <section className="sticky top-0 z-50">
                 <Navbar></Navbar>
                 </section>
 
-                <div className="bg-green-600 min-h-screen py-10 font-Roboto">
-                <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
+                <div className="bg-green-600 dark:bg-gray-900 min-h-screen py-10 font-Roboto">
+                <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8">
                     <h2 className="text-4xl font-Oswald uppercase border-b pb-6 font-bold text-center text-green-600 mb-6">
                     Update Food
                     </h2>
@@ -97,7 +97,7 @@ const UpdateFood = () => {
                     >
                     {/* Food Name */}
                     <div>
-                        <label className="block text-gray-700 font-semibold mb-2">
+                        <label className="block text-gray-700 font-semibold mb-2 dark:text-white">
                         Food Name
                         </label>
                         <input
@@ -105,33 +105,33 @@ const UpdateFood = () => {
                         name="food_title"
                         defaultValue={food.title}
                         placeholder="Enter food name"
-                        className="w-full py-2 px-3 outline-none border rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                        className="w-full py-2 px-3 outline-none border rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                         />
                     </div>
 
                     {/* Food Image */}
                     <div>
-                        <label className="block text-gray-700 font-semibold mb-2">
+                        <label className="block text-gray-700 font-semibold mb-2 dark:text-white">
                         Food Image
                         </label>
                         <input
                         type="url"
                         name="image"
                         defaultValue={food.image}
-                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                         />
                     </div>
 
                     {/* Food Category */}
                     {food.category && (
                         <div>
-                            <label className="block text-gray-700 font-semibold mb-2">
+                            <label className="block text-gray-700 font-semibold mb-2 dark:text-white">
                             Food Category
                             </label>
                             <select
                             name="category"
                             defaultValue={food.category}
-                            className="w-full py-2 px-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                            className="w-full py-2 px-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                             >
                             <option value="">Select category</option>
                             <option value="burger">Burger</option>
@@ -148,7 +148,7 @@ const UpdateFood = () => {
 
                     {/* Quantity */}
                     <div>
-                        <label className="block text-gray-700 font-semibold mb-2">
+                        <label className="block text-gray-700 font-semibold mb-2 dark:text-white">
                         Quantity
                         </label>
                         <input
@@ -156,13 +156,13 @@ const UpdateFood = () => {
                         name="quantity"
                         defaultValue={food.quantity}
                         placeholder="Enter quantity"
-                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                         />
                     </div>
 
                     {/* Price */}
                     <div>
-                        <label className="block text-gray-700 font-semibold mb-2">
+                        <label className="block text-gray-700 font-semibold mb-2 dark:text-white">
                         Price
                         </label>
                         <input
@@ -170,13 +170,13 @@ const UpdateFood = () => {
                         name="price"
                         defaultValue={food.price}
                         placeholder="Enter price"
-                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                         />
                     </div>
 
                     {/* Add By */}
                     <div>
-                        <label className="block text-gray-700 font-semibold mb-2">
+                        <label className="block text-gray-700 font-semibold mb-2 dark:text-white">
                         Add By
                         </label>
                         <div className="flex space-x-4">
@@ -186,7 +186,7 @@ const UpdateFood = () => {
                             defaultValue={user?.displayName}
                             disabled="true"
                             placeholder="Your name"
-                            className="w-1/2 py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                            className="w-1/2 py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                         />
                         <input
                             type="email"
@@ -194,14 +194,14 @@ const UpdateFood = () => {
                             disabled="true"
                             defaultValue={user?.email}
                             placeholder="Your email"
-                            className="w-1/2 py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                            className="w-1/2 py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                         />
                         </div>
                     </div>
 
                     {/* Food Origin */}
                     <div>
-                        <label className="block text-gray-700 font-semibold mb-2">
+                        <label className="block text-gray-700 font-semibold mb-2 dark:text-white">
                         Food Origin
                         </label>
                         <input
@@ -209,13 +209,13 @@ const UpdateFood = () => {
                         name="origin"
                         defaultValue={food.origin}
                         placeholder="Enter country of origin"
-                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                         />
                     </div>
 
                     {/* Short Description */}
                     <div className="md:col-span-2">
-                        <label className="block text-gray-700 font-semibold mb-2">
+                        <label className="block text-gray-700 font-semibold mb-2 dark:text-white">
                         Short Description
                         </label>
                         <textarea
@@ -223,7 +223,7 @@ const UpdateFood = () => {
                         defaultValue={food.description}
                         placeholder="Write ingredients, making procedure, etc."
                         rows="4"
-                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
                         ></textarea>
                     </div>
 

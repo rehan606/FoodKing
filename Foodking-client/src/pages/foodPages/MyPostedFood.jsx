@@ -41,7 +41,7 @@ const MyPostedFood = () => {
 
       <div className="bg-gray-100 py-20 dark:bg-gray-800">
         <div className="w-full lg:w-6/12 mx-auto mb-4 ">
-          <h2 className="text-2xl font-bold ml-7 text-red-500">
+          <h2 className="text-2xl font-bold ml-7 text-red-500 dark:text-white">
             My Foods: ({foods.length}){" "}
           </h2>
         </div>
@@ -49,7 +49,7 @@ const MyPostedFood = () => {
           {
             foods.map((food) => (
                 <div key={food._id} className="w-full lg:w-6/12  mx-auto transition-transform duration-700 ease-out hover:scale-105">
-                    <div className="bg-white group hover:bg-[#FFB936] border hover:border-green-500 transition duration-300 rounded-md shadow-lg grid grid-rows-1 md:grid-cols-6 gap-4">
+                    <div className="bg-white dark:bg-gray-900 group hover:bg-[#FFB936] border hover:border-green-500 transition duration-300 rounded-md shadow-lg grid grid-rows-1 md:grid-cols-6 gap-4">
                         {/* Left Column: Food Image */}
                         <div className="col-span-6 md:col-span-2 p-3 flex items-center justify-center ">
                             <img
@@ -67,15 +67,15 @@ const MyPostedFood = () => {
                                 <span className="text-red-500">★</span>
                                 <span className="text-red-500">★</span>
                                 <span className="text-red-500">★</span>
-                                <span className="text-gray-900">★</span>
-                                <span className="text-gray-900">★</span>
+                                <span className="text-gray-900 dark:text-white">★</span>
+                                <span className="text-gray-900 dark:text-white">★</span>
                                 </div>
                                 {/* Title */}
-                                <h2 className="text-lg font-bold text-gray-800 mb-1 ">
+                                <h2 className="text-lg font-bold text-gray-800 mb-1 dark:text-white capitalize">
                                 {food.title}
                                 </h2>
                                 {/* Short Description */}
-                                <p className="text-gray-600 text-sm">{ food.description.slice(0,100)} ... </p>
+                                <p className="text-gray-600 text-sm dark:text-white">{ food.description.slice(0,100)} ... </p>
                             </div>
                             {/* Price and Update Button */}
                             <div className="flex items-center justify-between mt-4">
