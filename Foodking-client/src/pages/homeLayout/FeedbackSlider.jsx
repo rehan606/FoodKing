@@ -40,6 +40,12 @@ const FeedbackSlider = () => {
             slidesToShow: 1,
             },
         },
+        {
+            breakpoint: 320,
+            settings: {
+            slidesToShow: 1,
+            },
+        },
         ],
     };
 

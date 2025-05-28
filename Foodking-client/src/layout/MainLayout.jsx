@@ -10,6 +10,7 @@ import Reservation from '../pages/homeLayout/Reservation';
 import RecipeSection from '../pages/homeLayout/Recipes';
 import IcedGreenTeaSection from '../pages/homeLayout/IcedGreenTeaSection';
 import FeedbackSlider from '../pages/homeLayout/FeedbackSlider';
+import TableBooking from '../pages/homeLayout/TableBooking';
 
 const MainLayout = () => {
     return (
@@ -43,6 +44,10 @@ const MainLayout = () => {
 
             <section >
                 <RecipeSection></RecipeSection>
+            </section>
+
+            <section >
+                <TableBooking></TableBooking>
             </section>
 
             <section>
