@@ -7,7 +7,7 @@ const Services = () => {
     return (
       <section className="bg-gray-100 text-gray-300 py-16 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <h2 className="text-3xl font-bold text-center text-red-600 mb-8 dark:text-white">Our Services</h2>
+          <h2 className="text-3xl font-bold text-center text-green-600 mb-8 dark:text-white">Our Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  bg-gray-900 p-6 rounded-lg">
             {/* Service 1 */}
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-left">

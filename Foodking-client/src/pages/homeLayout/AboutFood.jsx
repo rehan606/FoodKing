@@ -11,7 +11,7 @@ const AboutFood = () => {
             alt="Delicious Burger"
             className="rounded-lg shadow-lg w-80 md:w-full max-w-sm md:max-w-md"
           />
-          <div className="absolute top-4 left-4 bg-yellow-400 text-white font-bold py-1 px-3 rounded">
+          <div className="absolute top-4 left-4 bg-green-600 text-white font-bold py-1 px-3 rounded">
             Since 1985
           </div>
           <p className="absolute bottom-4 left-4 text-3xl font-bold text-black bg-white/75 px-2 py-1 rounded">
@@ -21,12 +21,12 @@ const AboutFood = () => {
 
         {/* Right Section: Text Content */}
         <div className="md:w-1/2 text-center md:text-left mt-6 md:mt-0">
-          <p className="text-sm text-red-500 font-bold uppercase">
+          <p className="text-sm text-green-600 font-bold uppercase">
             About Our Food
           </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 mt-2 dark:text-white">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-gray-800 mt-2 dark:text-white">
             Where Quality Meets Excellent{" "}
-            <span className="text-red-500">Service</span>.
+            <span className="text-green-600">Service</span>.
           </h1>
           <p className="text-gray-600 mt-4 dark:text-white">
             It's the perfect dining experience where every dish is crafted with
@@ -35,7 +35,7 @@ const AboutFood = () => {
           </p>
           <div className="flex flex-col md:flex-row mt-6 gap-4">
             <div className="flex items-center gap-2">
-              <span className="bg-red-500 text-white p-2 rounded-full">
+              <span className="bg-[#fde047] text-white p-2 rounded-full">
                 <i className="fas fa-utensils"></i>
               </span>
               <p className="text-gray-800 font-semibold dark:text-white">Super Quality Food</p>

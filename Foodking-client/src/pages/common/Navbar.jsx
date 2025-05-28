@@ -153,7 +153,7 @@ const Navbar = () => {
           ) : (
             <Link
               to="/auth/login"
-              className="btn bg-[#D12525] py-2 px-5 md:px-7 hover:bg-green-700 text-white font-Oswald uppercase"
+              className="btn bg-[#16A34A] py-2 px-5 md:px-7 border-white shadow-md hover:bg-[#fde047] hover:text-gray-600 text-white font-Oswald uppercase"
             >
               Login
             </Link>

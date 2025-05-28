@@ -8,6 +8,7 @@ import Services from '../pages/homeLayout/Services';
 import TopFoods from '../pages/foodPages/TopFoods';
 import Reservation from '../pages/homeLayout/Reservation';
 import RecipeSection from '../pages/homeLayout/Recipes';
+import IcedGreenTeaSection from '../pages/homeLayout/IcedGreenTeaSection';
 
 const MainLayout = () => {
     return (
@@ -29,6 +30,10 @@ const MainLayout = () => {
             
             <section>
                 <AboutFood></AboutFood>
+            </section>
+
+            <section>
+                <IcedGreenTeaSection></IcedGreenTeaSection>
             </section>
 
             <section >
