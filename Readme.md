@@ -8,14 +8,14 @@ FoodKing is a dynamic food ordering and management web application developed usi
     <a href="https://foodking-d2588.web.app/"> Click Here to Visite Site </a>
 </p> 
 
-## Technologies Used
+## Technologies Used:
 
 - **Frontend**: React, Tailwind CSS
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Authentication**: Firebase Authentication
 
-## Features
+## Features:
 
 - **Private Routing**: Ensures secure access to user-specific pages.
 - **User Authentication**: Supports user sign-up, login, and logout functionalities.
@@ -25,23 +25,23 @@ FoodKing is a dynamic food ordering and management web application developed usi
 - **Data Management**: Efficient handling and display of data from the database.
 
 
-## Home Page
+## Home Page:
 
 <!-- <p><img src="https://i.ibb.co.com/Dfg6wjkK/Food-King-4.png" alt="Food-King-4" border="0" width="800"></p> -->
 
 <a href="https://ibb.co.com/Jj57BvwT"><img src="https://i.ibb.co.com/7t2WYndD/Home-Page-Dark.png" alt="Home-Page-Dark" border="0" width="800"></a>
-## Getting Started
+## Getting Started:
 
 Follow these steps to set up the project locally:
 
-### Prerequisites
+### Prerequisites:
 
 Ensure you have the following installed:
 - Node.js
 - MongoDB
 - npm or yarn
 
-### Installation
+### Installation:
 
 1. **Clone the repository and server Repository from link:**
    ```bash
