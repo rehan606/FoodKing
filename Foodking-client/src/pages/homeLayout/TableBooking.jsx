@@ -11,7 +11,7 @@ const TableBooking = () => {
     };
 
     return (
-        <section className="bg-[#fffceb] py-20 px-6 md:px-10">
+        <section className="bg-[#fffceb] py-20  px-6 md:px-10">
             <div className="max-w-6xl  mx-auto bg-white shadow-md rounded-xl p-6 md:p-20 relative overflow-hidden ">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8">
                 <span className="text-gray-600">Table </span>

@@ -54,9 +54,9 @@ const MainLayout = () => {
                 <Services></Services>
             </section>
 
-            <section>
+            {/* <section>
                 <Reservation></Reservation>
-            </section>
+            </section> */}
 
             <section>
                 <Footer></Footer>
