@@ -42,7 +42,7 @@ const IcedGreenTeaSection = () => {
             <div className="absolute left-2 top-0 bg-red-600 text-white px-2 py-1 rounded rotate-[-20deg] text-sm font-bold z-20">
               SALE <br /> <span className="text-yellow-300">50% OFF</span>
             </div>
-            <img src={greenTeaBottle} alt="Green Tea Bottle" className="w-52 md:w-96 relative z-0" />
+            <img src={greenTeaBottle} alt="Green Tea Bottle" className="w-52 md:w-96 relative z-0 animate-pulse" />
           </div>
         </div>
       </div>

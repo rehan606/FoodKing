@@ -9,6 +9,7 @@ import TopFoods from '../pages/foodPages/TopFoods';
 import Reservation from '../pages/homeLayout/Reservation';
 import RecipeSection from '../pages/homeLayout/Recipes';
 import IcedGreenTeaSection from '../pages/homeLayout/IcedGreenTeaSection';
+import FeedbackSlider from '../pages/homeLayout/FeedbackSlider';
 
 const MainLayout = () => {
     return (
@@ -34,6 +35,10 @@ const MainLayout = () => {
 
             <section>
                 <IcedGreenTeaSection></IcedGreenTeaSection>
+            </section>
+
+            <section>
+                <FeedbackSlider></FeedbackSlider>
             </section>
 
             <section >
