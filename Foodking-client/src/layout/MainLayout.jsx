@@ -11,6 +11,7 @@ import RecipeSection from '../pages/homeLayout/Recipes';
 import IcedGreenTeaSection from '../pages/homeLayout/IcedGreenTeaSection';
 import FeedbackSlider from '../pages/homeLayout/FeedbackSlider';
 import TableBooking from '../pages/homeLayout/TableBooking';
+import RecipeTips from '../pages/homeLayout/RecipeTips';
 
 const MainLayout = () => {
     return (
@@ -57,6 +58,10 @@ const MainLayout = () => {
             {/* <section>
                 <Reservation></Reservation>
             </section> */}
+
+            <section>
+                <RecipeTips></RecipeTips>
+            </section>
 
             <section>
                 <Footer></Footer>

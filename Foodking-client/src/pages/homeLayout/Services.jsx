@@ -5,7 +5,7 @@ import { SiCodefresh } from "react-icons/si";
 
 const Services = () => {
     return (
-      <section className="bg-white text-gray-300 py-20 dark:bg-gray-900">
+      <section className="bg-[#F3F4F6] text-gray-300 py-20 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8">
                 <span className="text-gray-600">Our </span>
