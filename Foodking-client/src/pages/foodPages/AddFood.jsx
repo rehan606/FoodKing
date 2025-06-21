@@ -73,7 +73,7 @@ const AddFood = () => {
                 <Navbar></Navbar>
             </section>
 
-            <div className="addfoodbg dark:bg-[#1F2937 ] min-h-screen py-10 font-Roboto">
+            <div className="bg-[#F3F4F6] dark:bg-[#1F2937] min-h-screen py-10 font-Roboto">
             <div className="max-w-2xl mx-auto bg-white/40 dark:bg-gray-900/80 shadow-lg rounded-lg p-8">
                 <h2 className="text-4xl font-Oswald uppercase border-b pb-6 font-bold text-center text-green-600 mb-6 dark:text-white">Add New Food Item</h2>
                 <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">

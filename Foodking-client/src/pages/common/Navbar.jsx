@@ -23,24 +23,34 @@ const Navbar = () => {
 
   const links = (
     <>
-      <li className="font-Oswald uppercase">
-        <NavLink to="/">Home</NavLink>
+      <li className="font-Oswald uppercase ">
+        <NavLink to="/" className={({ isActive }) =>
+          isActive ? "text-white font-bold border-b-2 rounded-none " : "text-white"
+        }>Home</NavLink>
       </li>
 
       <li className="font-Oswald uppercase">
-        <NavLink to="/allFoods">All Foods</NavLink>
+        <NavLink to="/allFoods" className={({ isActive }) =>
+          isActive ? "text-white font-bold border-b-2 rounded-none " : "text-white"
+        }>All Foods</NavLink>
       </li>
       <li className="font-Oswald uppercase">
-        <NavLink to="/gallery">Gallery</NavLink>
+        <NavLink to="/gallery" className={({ isActive }) =>
+          isActive ? "text-white font-bold border-b-2 rounded-none" : "text-white"
+        }>Gallery</NavLink>
       </li>
 
       {user?.email && (
         <li className="font-Oswald uppercase">
-          <NavLink to="/my-order">My Order</NavLink>
+          <NavLink to="/my-order" className={({ isActive }) =>
+          isActive ? "text-white font-bold border-b-2 rounded-none" : "text-white"
+        }>My Order</NavLink>
         </li>
       )}
       <li className="font-Oswald uppercase">
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/contact" className={({ isActive }) =>
+          isActive ? "text-white font-bold border-b-2 rounded-none" : "text-white"
+        }>Contact</NavLink>
       </li>
     </>
   );
