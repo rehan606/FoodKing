@@ -67,7 +67,7 @@ const Footer = () => {
             <p className="mt-4 text-gray-600">
               570 8th Ave, New York, NY
               <br />
-              <span className="text-red-500">10018 United States</span>
+              <span className="text-green-500">10018 United States</span>
             </p>
             <p className="mt-2 text-gray-600">
               <span className="font-bold">Hours:</span>
@@ -104,7 +104,7 @@ const Footer = () => {
         </div>
         <div className='bg-green-600 mt-6 dark:bg-gray-800'>
             <div className="w-11/12 mx-auto text-center ">
-                <p className='text-white py-6 text-md'>© Copyright <span className='text-yellow-500'>2024</span> Foodking . All Rights Reserved.</p>
+                <p className='text-white py-6 text-md'>© Copyright <span className='text-black dark:text-green-500'>{new Date().getFullYear()}</span> Foodking . All Rights Reserved.</p>
             </div>
         </div>
       </footer>

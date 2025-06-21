@@ -41,8 +41,8 @@ const MyPostedFood = () => {
 
       <div className="bg-gray-100 py-20 dark:bg-gray-800">
         <div className="w-full lg:w-6/12 mx-auto mb-4 ">
-          <h2 className="text-2xl font-bold ml-7 text-red-500 dark:text-white">
-            My Foods: ({foods.length}){" "}
+          <h2 className="text-2xl font-bold ml-7 text-gray-500 dark:text-white">
+            My Posted Foods: ({foods.length}){" "}
           </h2>
         </div>
         <div className="w-11/12 mx-auto flex flex-col gap-4">

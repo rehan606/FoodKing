@@ -78,12 +78,12 @@ const Cart = () => {
 
 
             {/* Order Page  */}
-            <div className="min-h-screen bg-gray-100 dark:bg-gray-800 flex flex-col items-center p-4 pt-20">
+            <div className=" bg-gray-100 dark:bg-gray-800 flex flex-col items-center p-4 py-20">
                 <div className="w-full max-w-4xl bg-white dark:bg-gray-900 shadow-md rounded-lg overflow-hidden">
                     {/* Cart Table */}
                     <table className="w-full text-left border-collapse">
                         <thead>
-                        <tr className="bg-gray-900 text-green-600">
+                        <tr className=" bg-white/20 dark:bg-black/10 text-green-600">
                             <th className="p-4">Product</th>
                             <th className="p-4">Price</th>
                             <th className="p-4">Quantity</th>
@@ -99,7 +99,7 @@ const Cart = () => {
 
                             {
                                 orders.map(order => (
-                                    <tr key={order._id} className="border-t hover:bg-green-200 dark:hover:bg-gray-800 ">
+                                    <tr key={order._id} className="border-t hover:bg-gray-200 dark:hover:bg-gray-800 ">
                                         <td className="p-4 flex items-center">
                                         <img
                                             src={order.image}

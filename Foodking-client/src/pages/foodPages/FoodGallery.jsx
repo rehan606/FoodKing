@@ -84,7 +84,7 @@ const FoodGallery = () => {
   ];
 
   return (
-    <div>
+    <div className="bg-[#F9FAFB] dark:bg-[#1F2937]">
       <section className='sticky top-0 z-50'>
         <Navbar></Navbar>
       </section>

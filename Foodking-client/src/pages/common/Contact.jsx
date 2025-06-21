@@ -29,7 +29,7 @@ const Contact = () => {
         </div>
       </div>
         <section className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6 dark:bg-gray-800">
-            <div className="max-w-4xl w-full bg-white shadow-lg rounded-2xl p-8 dark:bg-gray-900">
+            <div className="max-w-4xl w-full bg-white/30 shadow-xl rounded-2xl p-8 dark:bg-gray-900">
                 <h2 className="text-3xl font-bold text-center text-gray-800 mb-6 dark:text-white">Contact Us</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                 <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
@@ -39,7 +39,7 @@ const Contact = () => {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="p-3 border bg-gray-200 dark:bg-gray-800 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="p-3 border bg-gray-100 dark:bg-gray-800 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                     required
                     />
                     <input
@@ -48,7 +48,7 @@ const Contact = () => {
                     placeholder="Your Email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="p-3 border border-gray-300 bg-gray-200 dark:bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="p-3 border border-gray-300 bg-gray-100 dark:bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                     required
                     />
                     <textarea
@@ -57,7 +57,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows="5"
-                    className="p-3 border border-gray-300 bg-gray-200 dark:bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="p-3 border border-gray-300 bg-gray-100 dark:bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                     required
                     ></textarea>
                     <button

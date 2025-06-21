@@ -224,7 +224,7 @@ const Register = () => {
                         {/* Submit Button */}
                         <button
                         type="submit"
-                        className="w-full bg-orange-500 text-white py-2 px-4 rounded-md text-sm font-medium hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                        className="w-full bg-green-500 text-white py-2 px-4 rounded-md text-sm font-medium hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                         >
                         Create an account
                         </button>
@@ -234,7 +234,7 @@ const Register = () => {
                         Already have an account?{" "}
                         <Link
                             to="/auth/login"
-                            className="text-orange-500 hover:underline"
+                            className="text-green-500 hover:underline"
                         >
                             Login
                         </Link>

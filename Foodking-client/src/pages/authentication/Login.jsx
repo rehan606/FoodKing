@@ -151,14 +151,14 @@ const Login = () => {
                             <Link
                                 to="/auth/forgetPassword"
                                 state={{ email }}
-                                className="text-sm text-orange-500 hover:underline"
+                                className="text-sm text-red-500 hover:underline"
                             >
                                 Forgot Password
                             </Link>
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition"
+                            className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 transition"
                         >
                             Login
                         </button>
@@ -168,7 +168,7 @@ const Login = () => {
                         Don't have an account?{" "}
                         <Link
                             to="/auth/register"
-                            className="text-orange-500 hover:underline"
+                            className="text-green-500 hover:underline"
                         >
                             Create an account
                         </Link>

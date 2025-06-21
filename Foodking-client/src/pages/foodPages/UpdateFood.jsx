@@ -86,8 +86,8 @@ const UpdateFood = () => {
                 <Navbar></Navbar>
                 </section>
 
-                <div className="bg-green-600 dark:bg-gray-900 min-h-screen py-10 font-Roboto">
-                <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8">
+                <div className="bg-gray-100 dark:bg-gray-900 min-h-screen py-10 font-Roboto">
+                <div className="max-w-4xl mx-auto bg-white/30 dark:bg-gray-800 shadow-lg rounded-lg p-8">
                     <h2 className="text-4xl font-Oswald uppercase border-b pb-6 font-bold text-center text-green-600 mb-6">
                     Update Food
                     </h2>
@@ -105,7 +105,7 @@ const UpdateFood = () => {
                         name="food_title"
                         defaultValue={food.title}
                         placeholder="Enter food name"
-                        className="w-full py-2 px-3 outline-none border rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
+                        className="w-full py-2 px-3 outline-none border rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-100 dark:bg-gray-800 dark:text-white"
                         />
                     </div>
 
@@ -118,7 +118,7 @@ const UpdateFood = () => {
                         type="url"
                         name="image"
                         defaultValue={food.image}
-                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
+                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-100 dark:bg-gray-800 dark:text-white"
                         />
                     </div>
 
@@ -131,7 +131,7 @@ const UpdateFood = () => {
                             <select
                             name="category"
                             defaultValue={food.category}
-                            className="w-full py-2 px-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
+                            className="w-full py-2 px-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-100 dark:bg-gray-800 dark:text-white"
                             >
                             <option value="">Select category</option>
                             <option value="burger">Burger</option>
@@ -156,7 +156,7 @@ const UpdateFood = () => {
                         name="quantity"
                         defaultValue={food.quantity}
                         placeholder="Enter quantity"
-                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
+                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-100 dark:bg-gray-800 dark:text-white"
                         />
                     </div>
 
@@ -170,7 +170,7 @@ const UpdateFood = () => {
                         name="price"
                         defaultValue={food.price}
                         placeholder="Enter price"
-                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
+                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-100 dark:bg-gray-800 dark:text-white"
                         />
                     </div>
 
@@ -186,7 +186,7 @@ const UpdateFood = () => {
                             defaultValue={user?.displayName}
                             disabled="true"
                             placeholder="Your name"
-                            className="w-1/2 py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
+                            className="w-1/2 py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-100 dark:bg-gray-800 dark:text-white"
                         />
                         <input
                             type="email"
@@ -194,7 +194,7 @@ const UpdateFood = () => {
                             disabled="true"
                             defaultValue={user?.email}
                             placeholder="Your email"
-                            className="w-1/2 py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
+                            className="w-1/2 py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-100 dark:bg-gray-800 dark:text-white"
                         />
                         </div>
                     </div>
@@ -209,7 +209,7 @@ const UpdateFood = () => {
                         name="origin"
                         defaultValue={food.origin}
                         placeholder="Enter country of origin"
-                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
+                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-100 dark:bg-gray-800 dark:text-white"
                         />
                     </div>
 
@@ -223,7 +223,7 @@ const UpdateFood = () => {
                         defaultValue={food.description}
                         placeholder="Write ingredients, making procedure, etc."
                         rows="4"
-                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-200 dark:bg-gray-800 dark:text-white"
+                        className="w-full py-2 px-3 outline-none border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 text-black bg-gray-100 dark:bg-gray-800 dark:text-white"
                         ></textarea>
                     </div>
 

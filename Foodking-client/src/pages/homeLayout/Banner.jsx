@@ -11,7 +11,7 @@ const Banner = () => {
                 <div className="md:w-1/2 text-center md:text-left ">
                     <p className="text-sm text-green-600 font-semibold">Delicious & Fresh</p>
                     <h1 className="text-4xl md:text-7xl uppercase font-extrabold text-white mt-7 animate-bounce">
-                    Savor <span className="text-yellow-300">the Best</span> Meals
+                    Savor <span className="text-green-600">the Best</span> Meals
                     </h1>
                     <p className="text-white mt-4 mb-16">
                     Experience a world of flavors with our freshly prepared meals. Enjoy
