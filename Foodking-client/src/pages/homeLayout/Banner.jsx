@@ -9,7 +9,7 @@ const Banner = () => {
             <div className="absolute top-0 left-0 bg-black/60 w-full h-full"></div>
             <div className="w-11/12 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 py-20">
                 {/* Left Section */}
-                <div className="md:w-1/2 text-center md:text-left z-50">
+                <div className="md:w-1/2 text-center md:text-left z-30">
                     <p className="text-sm text-green-600 font-semibold">Delicious & Fresh</p>
                     <h1 className="text-4xl md:text-7xl uppercase font-extrabold text-white mt-7 animate-bounce">
                     Savor <span className="text-green-600">the Best</span> Meals

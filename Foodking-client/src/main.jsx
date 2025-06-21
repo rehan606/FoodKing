@@ -23,6 +23,7 @@ import { QueryClient,QueryClientProvider, useQuery, } from '@tanstack/react-quer
 import PrivetRoute from './router/PrivetRoute.jsx';
 import Contact from './pages/common/Contact.jsx';
 import Dashboard from './pages/dashboard/Dashboard.jsx';
+import DashboardHome from './pages/dashboard/DashboardHome.jsx';
 const queryClient = new QueryClient()
 
 
@@ -52,7 +53,11 @@ const router = createBrowserRouter([
     element: <PrivetRoute> <Dashboard></Dashboard> </PrivetRoute> ,
     children: [
       {
-        path: 'addFood',
+        path: '/dashboard',
+        element: <PrivetRoute> <DashboardHome></DashboardHome> </PrivetRoute> ,
+      },
+      {
+        path: '/dashboard/addFood',
         element: <PrivetRoute> <AddFood></AddFood> </PrivetRoute> ,
     
       },
