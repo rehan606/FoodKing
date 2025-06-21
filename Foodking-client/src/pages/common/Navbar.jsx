@@ -131,6 +131,11 @@ const Navbar = () => {
                   </div>
                 </div>
                 <li>
+                  <Link to="/dashboard" className="justify-between text-green-500 font-semibold">
+                    Dashboard
+                  </Link>
+                </li>
+                <li>
                   <Link to="/addFood" className="justify-between text-green-500 font-semibold">
                     Add Food
                   </Link>

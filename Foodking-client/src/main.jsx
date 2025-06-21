@@ -22,6 +22,7 @@ import FoodGallery from './pages/foodPages/FoodGallery.jsx';
 import { QueryClient,QueryClientProvider, useQuery, } from '@tanstack/react-query'
 import PrivetRoute from './router/PrivetRoute.jsx';
 import Contact from './pages/common/Contact.jsx';
+import Dashboard from './pages/dashboard/Dashboard.jsx';
 const queryClient = new QueryClient()
 
 
@@ -44,6 +45,17 @@ const router = createBrowserRouter([
         path: '/auth/login',
         element: <Login></Login>
       }
+    ]
+  },
+  {
+    path: 'dashboard',
+    element: <PrivetRoute> <Dashboard></Dashboard> </PrivetRoute> ,
+    children: [
+      {
+        path: 'addFood',
+        element: <PrivetRoute> <AddFood></AddFood> </PrivetRoute> ,
+    
+      },
     ]
   },
   {

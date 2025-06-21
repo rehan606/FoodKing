@@ -5,15 +5,16 @@ const Banner = () => {
 
 
     return (
-        <section className="  addfoodbg ">
+        <section className="  addfoodbg relative ">
+            <div className="absolute top-0 left-0 bg-black/60 w-full h-full"></div>
             <div className="w-11/12 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 py-20">
                 {/* Left Section */}
-                <div className="md:w-1/2 text-center md:text-left ">
+                <div className="md:w-1/2 text-center md:text-left z-50">
                     <p className="text-sm text-green-600 font-semibold">Delicious & Fresh</p>
                     <h1 className="text-4xl md:text-7xl uppercase font-extrabold text-white mt-7 animate-bounce">
                     Savor <span className="text-green-600">the Best</span> Meals
                     </h1>
-                    <p className="text-white mt-4 mb-16">
+                    <p className="text-white mt-4 mb-16 ">
                     Experience a world of flavors with our freshly prepared meals. Enjoy
                     quality ingredients and mouthwatering recipes.
                     </p>
@@ -27,7 +28,7 @@ const Banner = () => {
                     <img
                     src="https://foodking-react.vercel.app/assets/img/hero/chiken.png"
                     alt="Delicious Food"
-                    className="rounded-lg animate-pulse transition-transform duration-700 ease-out hover:rotate-5 hover:scale-125 shadow-lg w-80 md:w-full max-w-sm md:max-w-lg"
+                    className="rounded-lg animate-bounce transition-transform duration-700 ease-out hover:rotate-5 hover:scale-125 shadow-lg w-80 md:w-full max-w-sm md:max-w-lg"
                     />
                 </div>
             </div>
