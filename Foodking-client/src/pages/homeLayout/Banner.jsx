@@ -6,7 +6,7 @@ const Banner = () => {
 
     return (
         <section className="  addfoodbg ">
-            <div className="w-11/12 mx-auto flex flex-col md:flex-row items-center justify-between gap-6 py-20">
+            <div className="w-11/12 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 py-20">
                 {/* Left Section */}
                 <div className="md:w-1/2 text-center md:text-left ">
                     <p className="text-sm text-green-600 font-semibold">Delicious & Fresh</p>

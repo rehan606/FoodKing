@@ -38,28 +38,30 @@ const TopFoods = () => {
 
 
     return (
-        <div className="bg-gray-100  dark:bg-gray-800 dark:text-white">
-        {/* Cards  */}
+        <section className="bg-gray-100 dark:bg-gray-800">
+            <div className=" max-w-7xl mx-auto  dark:text-white">
+            {/* Cards  */}
 
-            <div className="py-20  ">
-                <div className="w-11/12 mx-auto mb-10 ">
-                    <span className="text-sm md:text-md uppercase text-red-500 font-bold ">crispy, every bite taste</span>
-                    <h2 className="text-3xl md:text-5xl  text-gray-950 uppercase font-bold mt-2 md:mt-4 dark:text-white">Popular Food Items </h2>
+                <div className="py-20  ">
+                    <div className="w-11/12 mx-auto mb-10 ">
+                        <span className="text-sm md:text-md uppercase text-red-500 font-bold ">crispy, every bite taste</span>
+                        <h2 className="text-3xl md:text-5xl  text-gray-950 uppercase font-bold mt-2 md:mt-4 dark:text-white">Popular Food Items </h2>
 
-                </div>
-                <div className=" w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-20">
+                    </div>
+                    <div className=" w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-20">
 
-                    {foods.slice(0, 8).map((food) => (
-                        <TopFoodCard key={food._id} food={food}></TopFoodCard>
-                    ))}
-                </div>
+                        {foods.slice(0, 8).map((food) => (
+                            <TopFoodCard key={food._id} food={food}></TopFoodCard>
+                        ))}
+                    </div>
 
-                <div className="flex justify-center">
-                
-                    <Link to='/allFoods' className="bg-green-600 animate-bounce py-4 px-7 flex items-center gap-3 uppercase text-white font-semibold rounded-md hover:bg-red-600"> <FaTruckFast /> View More</Link>
+                    <div className="flex justify-center">
+                    
+                        <Link to='/allFoods' className="bg-green-600 animate-bounce py-4 px-7 flex items-center gap-3 uppercase text-white font-semibold rounded-md hover:bg-red-600"> <FaTruckFast /> View More</Link>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

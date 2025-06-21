@@ -33,9 +33,11 @@ export default function RecipeSection() {
   }, []);
 
   return (
-    <section className="bg-white py-16 px-4 md:px-12 dark:bg-gray-800 " id="recipes">
+    <section className="bg-[#F9FAFB] py-16 px-4 md:px-12 dark:bg-[#111827] " id="recipes">
       <div className="max-w-7xl mx-auto text-center" data-aos="fade-up">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-600 mb-4 dark:text-white">Popular <span className="text-green-800">Recipes</span></h2>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold  mb-4 ">
+          <span className="text-gray-600 dark:text-white" >Popular</span> 
+          <span className="text-green-800"> Recipes</span></h2>
         <p className="text-gray-500 mb-12">Taste the best dishes chosen by our chefs.</p>
 
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

@@ -11,10 +11,10 @@ const TableBooking = () => {
     };
 
     return (
-        <section className="bg-[#fffceb] py-20  px-6 md:px-10">
-            <div className="max-w-6xl  mx-auto bg-white shadow-md rounded-xl p-6 md:p-20 relative overflow-hidden ">
+        <section className="bg-[#F9FAFB]  dark:bg-[#1F2937]  py-20  px-6 md:px-10">
+            <div className="max-w-6xl  mx-auto bg-white dark:bg-[#111827] shadow-md rounded-xl p-6 md:p-20 relative overflow-hidden ">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8">
-                <span className="text-gray-600">Table </span>
+                <span className="text-gray-600 dark:text-white">Table </span>
                 <span className="text-green-700">Booking</span>
                 </h2>
 
@@ -25,7 +25,7 @@ const TableBooking = () => {
                 <select
                     value={people}
                     onChange={(e) => setPeople(e.target.value)}
-                    className="outline-none border border-gray-300 rounded-md p-3 w-full md:w-48 bg-white text-gray-800"
+                    className="outline-none border border-gray-300 rounded-md p-3 w-full md:w-48 bg-white  dark:bg-[#1F2937] text-gray-800 dark:text-white"
                 >
                     <option>1 person</option>
                     <option>2 people</option>
@@ -39,13 +39,13 @@ const TableBooking = () => {
                     type="date"
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
-                    className="outline-none border border-gray-300 rounded-md p-3 w-full md:w-48 bg-white text-gray-800"
+                    className="outline-none border border-gray-300 rounded-md p-3 w-full md:w-48 bg-white dark:bg-[#1F2937] text-gray-800 dark:text-white"
                 />
 
                 <select
                     value={time}
                     onChange={(e) => setTime(e.target.value)}
-                    className="outline-none border border-gray-300 rounded-md p-3 w-full md:w-48 bg-white text-gray-800"
+                    className="outline-none border border-gray-300 rounded-md p-3 w-full md:w-48 bg-white dark:bg-[#1F2937] text-gray-800 dark:text-white"
                 >
                     <option>06:00 pm</option>
                     <option>06:30 pm</option>

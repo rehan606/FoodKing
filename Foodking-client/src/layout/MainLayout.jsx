@@ -40,20 +40,20 @@ const MainLayout = () => {
                 <IcedGreenTeaSection></IcedGreenTeaSection>
             </section>
 
-            <section>
-                <FeedbackSlider></FeedbackSlider>
-            </section>
-
             <section >
                 <RecipeSection></RecipeSection>
             </section>
-
-            <section >
-                <TableBooking></TableBooking>
+            
+            <section>
+                <RecipeTips></RecipeTips>
             </section>
 
             <section>
                 <Services></Services>
+            </section>
+
+            <section >
+                <TableBooking></TableBooking>
             </section>
 
             {/* <section>
@@ -61,12 +61,11 @@ const MainLayout = () => {
             </section> */}
 
             <section>
-                <RecipeTips></RecipeTips>
-            </section>
-
-            <section>
                 <FAQSection></FAQSection>
-
+            </section>
+            
+            <section>
+                <FeedbackSlider></FeedbackSlider>
             </section>
 
             <section>

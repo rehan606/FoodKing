@@ -50,19 +50,19 @@ const FeedbackSlider = () => {
     };
 
     return (
-        <div className="py-16 bg-[#F3F4F6]">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-600 text-center mb-10">
+        <div className="py-16 bg-[#F9FAFB] dark:bg-[#1F2937]">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-600 dark:text-white text-center mb-10">
                 Happy <span className="text-green-800">Feedback</span>
             </h2>
             <div className="container mx-auto px-4 max-w-6xl ">
                 <Slider {...settings}>
                 {feedbacks.map((fb, index) => (
                     
-                    <div key={index} className="bg-white  rounded-xl p-6 md:p-10 shadow-md flex flex-col md:flex-row items-center gap-5">
+                    <div key={index} className="bg-white  dark:bg-[#111827] rounded-xl p-6 md:p-10 shadow-md flex flex-col md:flex-row items-center">
                         <div className="flex justify-between  items-center">
                             <img src={fb.img} alt={fb.name} className="w-20 h-20 rounded-full border-4 border-green-600"/>
                             <div >
-                                <h3 className="text-xl md:text-4xl font-sans font-bold text-gray-800">{fb.name}</h3>
+                                <h3 className="text-xl md:text-4xl font-sans font-bold text-gray-800 dark:text-white">{fb.name}</h3>
                                 <div className="flex mt-1 text-orange-400">
                                     {"★".repeat(fb.rating)}
                                 </div>
@@ -72,7 +72,7 @@ const FeedbackSlider = () => {
                             <span className="text-3xl md:text-8xl text-gray-400">”</span>
                         </div>
                         <div className="flex items-center gap-4">
-                            <p className="mt-4 text-gray-700">{fb.message}</p>
+                            <p className="mt-4 text-gray-700 dark:text-white">{fb.message}</p>
                             <img src={fb.productImg} alt="Product" className="w-16 md:w-20 h-auto mt-4 md:mt-0"/>
                         </div>
                     </div>

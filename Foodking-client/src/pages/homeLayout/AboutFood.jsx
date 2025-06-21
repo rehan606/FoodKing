@@ -2,10 +2,10 @@ import React from "react";
 
 const AboutFood = () => {
   return (
-    <div>
-      <section className="flex flex-col md:flex-row items-center justify-between gap-6 bg-gray-50 p-6 md:p-12 dark:bg-gray-900">
+    <div className="bg-gray-50 dark:bg-gray-900">
+      <section className="flex flex-col max-w-7xl mx-auto md:flex-row items-center justify-between gap-6  p-6 md:p-12 ">
         {/* Left Section: Image */}
-        <div className="md:w-1/2 flex justify-center relative">
+        <div className="md:w-1/2  flex justify-center relative">
           <img
             src="https://foodking-react.vercel.app/assets/img/about/burger.png"
             alt="Delicious Burger"

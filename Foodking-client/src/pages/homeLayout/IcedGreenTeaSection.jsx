@@ -3,15 +3,15 @@ import greenTeaBottle from '../../assets/green-tea-bottle.png'; // Replace with 
 
 const IcedGreenTeaSection = () => {
   return (
-    <section className="bg-white px-4 pt-28 pb-20 md:px-10 lg:px-20">
+    <section className="bg-white dark:bg-[#1F2937] px-4 pt-28 pb-20 md:px-10 lg:px-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Text Section */}
         <div>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-gray-800 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-gray-800 dark:text-white leading-tight">
             Brand Iced Green Tea Lemon <span className="text-green-600">Juice</span><br />
             <span className="text-green-600">Food Included</span>
           </h1>
-          <p className="text-gray-600 mt-4">
+          <p className="text-gray-600 dark:text-white mt-4">
             Christmas is coming! Get your gifts sorted early, then you can sit back and enjoy some festive beers for yourself!
           </p>
 
