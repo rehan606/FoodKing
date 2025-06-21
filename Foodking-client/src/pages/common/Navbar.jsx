@@ -108,14 +108,14 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[50] mt-56 w-52 p-2 shadow"
+                className="menu menu-sm dropdown-content bg-white dark:bg-base-100 rounded-box z-[50] mt-60 w-52 p-2 shadow"
               >
                 <div className=" border-b px-4">
                   <div>
-                    <h2 className="text-orange-400 pt-3 font-bold rounded-lg text-center text-md">
+                    <h2 className="text-gray-700 dark:text-white pt-3 font-bold rounded-lg text-center text-md">
                       {user.displayName}
                     </h2>
-                    <h2 className="text-orange-400 rounded-lg text-center text-xs mb-3">
+                    <h2 className="text-gray-400 dark:text-white rounded-lg text-center text-xs mb-3">
                       {user.email}
                     </h2>
                   </div>
