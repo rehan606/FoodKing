@@ -24,6 +24,7 @@ import PrivetRoute from './router/PrivetRoute.jsx';
 import Contact from './pages/common/Contact.jsx';
 import Dashboard from './pages/dashboard/Dashboard.jsx';
 import DashboardHome from './pages/dashboard/DashboardHome.jsx';
+import MenuItems from './pages/dashboard/MenuItems.jsx';
 const queryClient = new QueryClient()
 
 
@@ -59,6 +60,11 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/addFood',
         element: <PrivetRoute> <AddFood></AddFood> </PrivetRoute> ,
+    
+      },
+      {
+        path: '/dashboard/menuItem',
+        element: <PrivetRoute> <MenuItems></MenuItems> </PrivetRoute> ,
     
       },
     ]

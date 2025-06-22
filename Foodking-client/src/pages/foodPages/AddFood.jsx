@@ -69,9 +69,9 @@ const AddFood = () => {
 
     return (
         <div>
-            <section className='sticky top-0 z-50'>
+            {/* <section className='sticky top-0 z-50'>
                 <Navbar></Navbar>
-            </section>
+            </section> */}
 
             <div className="bg-[#F3F4F6] dark:bg-[#1F2937] min-h-screen py-10 font-Roboto">
             <div className="max-w-2xl mx-auto bg-white/40 dark:bg-gray-900/80 shadow-lg rounded-lg p-8">
@@ -195,9 +195,9 @@ const AddFood = () => {
             </div>
             </div>
 
-            <section>
+            {/* <section>
                 <Footer></Footer>
-            </section>
+            </section> */}
         </div>
     );
 };

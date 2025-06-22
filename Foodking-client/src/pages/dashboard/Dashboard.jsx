@@ -20,7 +20,7 @@ const Dashboard = () => {
         {/* Sidebar */}
         {/* <div className="w-64 bg-white shadow-md hidden lg:flex flex-col p-5 space-y-6"></div> */}
 
-        <aside  className={`fixed top-0 left-0 z-40 h-100vh w-64 bg-white shadow-md p-5 space-y-6 transform transition-transform duration-300 ${
+        <aside  className={` fixed lg:fixed top-0 left-0 z-40 h-full w-64 bg-white shadow-md p-5 space-y-6 transform transition-transform duration-300 ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:translate-x-0 lg:static `}>
             <div className="flex justify-between items-center">
@@ -33,32 +33,33 @@ const Dashboard = () => {
             </div>
 
             <nav className="space-y-3">
-            <a href="#" className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-100">
+            <Link to="/dashboard" className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-100">
                 <FaChartPie className="text-green-500" /> Dashboard
-            </a>
+            </Link>
             <Link to="/dashboard/addFood"  className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-100">
                 <FaPlusCircle className="text-green-500" /> Add Foods
             </Link>
-            <a href="#" className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-100">
+            <Link to="/dashboard/menuItem"  className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-100">
                 <FaUtensils className="text-green-500" /> Menu Items
-            </a>
-            <a href="#" className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-100">
+            </Link>
+            <Link to=""  className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-100">
                 <FaUsers className="text-green-500" /> Customers
-            </a>
-            <a href="#" className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-100">
+            </Link>
+            <Link to=""  className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-100">
                 <FaShoppingCart className="text-green-500" /> Orders
-            </a>
-            <a href="#" className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-100">
+            </Link>
+            <Link to=""  className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-100">
                 <FaStar className="text-green-500" /> Reviews
-            </a>
+            </Link>
             </nav>
+
             <button className="mt-auto flex items-center gap-2 text-red-600 hover:text-red-800">
             <MdLogout /> Logout
             </button>
         </aside>
 
         {/* Main Content */}
-        <div className="flex-1 p-5">
+        <div className="flex-1 p-5 lg:ml-[256px] ">
 
             <div className="flex items-center gap-4">
                 {/* Hamburger */}
