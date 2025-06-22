@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { FaChartPie, FaUtensils, FaUsers, FaStar, FaPlusCircle, FaShoppingCart, FaTimes, FaBars } from 'react-icons/fa';
 import { MdLogout } from 'react-icons/md';
 import { Link, Outlet } from 'react-router-dom';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const Dashboard = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const { user, signOutUser } = useContext(AuthContext);
 
     return (
         <div className="min-h-screen flex bg-gray-100 text-gray-800 font-sans relative">
@@ -51,11 +53,18 @@ const Dashboard = () => {
             <Link to=""  className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-100">
                 <FaStar className="text-green-500" /> Reviews
             </Link>
+            <li onClick={() => {
+                    if (window.confirm("Are you sure you want to log out?")) {
+                        signOutUser();
+                    }
+                    }} className="mt-auto flex items-center gap-2 text-red-600 hover:text-red-800">
+                     <MdLogout /> <Link to="/"> Logout</Link>
+            </li>
             </nav>
 
-            <button className="mt-auto flex items-center gap-2 text-red-600 hover:text-red-800">
+            {/* <button className="mt-auto flex items-center gap-2 text-red-600 hover:text-red-800">
             <MdLogout /> Logout
-            </button>
+            </button> */}
         </aside>
 
         {/* Main Content */}
